@@ -1,27 +1,35 @@
 import "./content-style.css";
 import dataSet from "../../data";
-import { FaCircle } from "react-icons/fa";
 
-function Content({checkInUser}) {
+function Content({userStatus}) {
+
+  let atWork = [];
+  let away = [];
+
+  if(userStatus){
+    atWork.push(dataSet[0]);
+  }else{
+    away.push(dataSet[0]);
+  }
+
   return (<div className="content-div">
 
     <div >
-      <h3>At work ({checkInUser?1:0})</h3>
+      <h3>At work ({atWork.length})</h3>
       <div className="work-div">
-        {/* {dataSet.map(data => ( */}
-        {checkInUser && (
-        <div key={checkInUser.id}>
-          <p>{checkInUser.name}</p>
-          <p>{checkInUser.job}</p>
+       {atWork.map(data => ( 
+        <div key={data.id}>
+          <p>{data.name}</p>
+          <p>{data.job}</p>
         </div>
-        )}
+       ))}
       </div>
     </div>
 
     <div >
-      <h3>Away (0)</h3>
+      <h3>Away ({away.length})</h3>
       <div className="work-div">
-        {dataSet.map(data => (
+        {away.map(data => (
           <div key={data.id}>
             <p>{data.name}</p>
             <p>{data.job}</p>
