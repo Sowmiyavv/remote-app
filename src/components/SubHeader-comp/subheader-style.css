@@ -1,0 +1,67 @@
+.subheader-div{
+  height: 70px;
+  background-color: #15202B;
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  color: white;
+  align-items: center;
+}
+
+.status-p{
+  margin-left: 655px;
+
+}
+.meal-icon{
+  color: #AC8344;
+  margin-left: 16px;
+}
+.meal-img{
+  height: 24px;
+  width: 24px;
+  margin-left: 16px;
+  color: #AC8344;
+
+}
+
+.drop-down-div{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  height: 36px;
+  width: 140px;
+  border: 1px solid #2D3C4B;
+  border-radius: 24px;
+  /* padding: 12px 4px 2px 8px; */
+}
+.drop-down{
+  border: none;
+  background-color: #15202B;
+  color: white;
+}
+
+.bell-icon
+{
+  margin-left: 16px;
+  color:#b02440;
+}
+.check-inout-btn{
+  background-color: #15202B;
+  color: white;
+  height: 36px;
+  width: 140px;
+  border: 1px solid #2D3C4B;
+  border-radius: 24px;
+  font-size: 16px;
+}
+
+.checkin-btn {
+  color: green;
+  border-color: green;
+}
+
+.checkout-btn {
+  color: red;
+  border-color: red;
+}

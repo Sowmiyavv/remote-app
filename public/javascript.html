@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>js</title>
+  <style>
+    .hidden{
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div-ele">
+    <h1 class="count">0</h1>
+  </div>
+
+  <button id="change-btn" onclick="countIncreament()">Change</button>
+  <button id="reset-btn" onclick="resetBtn()">Reset</button>
+  <button onclick="hideBtn()">Hide</button>
+  <button onclick="showBtn()">Show</button>
+
+  <script>
+    function resetBtn() {
+      document.querySelector(".count").innerHTML = 0;
+    }
+
+    function countIncreament() {
+      (document.querySelector(".count").innerHTML)++;
+      const changeButton = document.querySelector("#change-btn");
+      changeButton.style.backgroundColor = "green";
+    }
+
+    function hideBtn() {
+      document.querySelector(".count").classList.add("hidden");
+    }
+
+    function showBtn() {
+      document.querySelector(".count").classList.remove("hidden");
+    }
+
+  </script>
+</body>
+
+</html>
+
+<!-- 
+// console.log((document.querySelector(".count").innerHTML)++);
+//   let newElement = document.createElement("h1");
+//   newElement.textContent = "hello";
+//   newElement.style.color = "green";
+//   document.body.appendChild(newElement); -->

@@ -1,0 +1,14 @@
+.content-div{
+  display: flex;
+  flex-direction: row;
+  gap:50px;
+}
+.work-div{
+  height: 500px;
+  width: 400px;
+  overflow: auto;
+  background-color: #15202B;
+  border-radius: 8px;
+  border: 1px solid #2D3C4B;
+  color: white;
+}
